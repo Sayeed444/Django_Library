@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="localib">
+        <h2 class="h2_boder"  >Author Page ...! </h2>
+        <!--  for author in author_x  -->
+        <ul>
+            {% for author in object_list %}
+                <li>
+                    <a class="L_color" href="{{author.revers_author_url}}">{{ author }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}

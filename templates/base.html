@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS -->
+    {% load static %}
+    <link rel='stylesheet' href="{% static 'css/style.css' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="back_ground_img">
+        <nav class="navbar navbar-expand-lg navbar-default bg-default">
+
+            <a class="navbar-brand nav_li_clr" href="{% url 'home' %}">Library</a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link nav_li_clr" href="{% url 'book' %}">Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_li_clr" href="{% url 'author' %}">Author</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav_li_clr" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="col-md-6 offset-md-3">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+
+    <div class="col-sm-12">
+        <div class="h2_books">
+            <h2>Update Books </h2>
+        </div>
+        <div class="row img_h3_h5">
+            <div class="col-sm-3 ">
+                <img src="{% static 'img/matin.jpg' %}" alt="pic.png">
+                <h3>সহজ ভাষায় পাইথন-৩ </h3>
+                <h5>মাকসুদুর রহমান মাটিন</h5>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'img/fari.jpg' %}" alt="pic.png">
+                <h3>প্রোগ্রামিং এক্সারসাইজ </h3>
+                <h5>তাহমিদ রাফি</h5>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'img/sukhon.jpg' %}" alt="pic.png">
+                <h3>মস্তিষ্কের ক্যানভাস  </h3>
+                <h5>সোলায়মান সুখন</h5>
+            </div>
+            <div class="col-sm-3">
+                <img src="{% static 'img/subin.jpg' %}" alt="pic.png">
+                <h3>পাইথন দিয়ে প্রোগ্রামিং শেখা  </h3>
+                <h5>তামিম শাহরিয়ার সুবিন</h5>
+            </div>
+        </div>
+    </div>
+    <footer class="footter">
+        @copy
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

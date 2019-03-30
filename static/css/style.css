@@ -1,0 +1,82 @@
+body {
+    font-family: 'Kalpurush', Arial, sans-serif !important;
+}
+.back_ground_img{
+    background: url("../img/11.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height:550px;
+}
+.nav_li_clr{
+    color: white;
+}
+
+.nav_li_clr:hover{
+    color: white;
+    background-color: #bbbbbb;
+    padding: 9px;
+    border-radius: 0px 23px;
+}
+.localib{
+    background-color: rgba(0,0,0,0.6);
+    padding:30px;
+    color: white;
+    margin-top: 60px;
+    border-radius: 60px 0px 60px 0px;
+}
+
+ /*.localib ul{
+    list-style: none;
+}
+*/
+
+.h2_books {
+    padding: 5px;
+    border-bottom: 2px dashed blue;
+    margin-bottom: 20px;
+}
+
+.img_h3_h5 img {
+    width: 300px;
+    height: 380px;
+    border: 1px solid #008000;
+    padding: 7px;
+    border-radius: 7px;
+}
+.img_h3_h5 h3 {
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 12px;
+}
+.img_h3_h5 h5 {
+    text-align: center;
+}
+
+
+.footter {
+    background-color: #E8E8E8;
+    text-align: center;
+    padding: 33px;
+    margin: 5px 0px;
+}
+
+.L_color{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+.L_color:hover{
+    color: white;
+    font-size: 20px;
+
+}
+.L2_color{
+    color: white;
+    font-size: 20px;
+}
+.h2_boder{
+    border-bottom: 2px dotted #fff;
+    padding-bottom: 4px;
+}
